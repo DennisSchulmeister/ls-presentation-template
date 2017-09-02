@@ -167,6 +167,40 @@
             </aside>
         </section>
 
+        <section>
+            <h1>Translating the User Interface</h1>
+            <article>
+                <p>
+                    This presentation is in English. So it makes sense that the
+                    buttons to navigate from slide to slide are English, too.
+                    If you want to change that:
+                </p>
+                <ol>
+                    <li>Edit the file <tt>index.js</tt></li>
+                    <li>Translate the <tt>label…</tt> values there</li>
+                </ol>
+                <p>
+                    For example in German:
+                </p>
+                <tt>
+                    import SlideshowPlayer from "lecture-slides.js";<br />
+                    <br />
+                    window.addEventListener("load", () => {<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;let player = new SlideshowPlayer({<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelPrev: <b>"Zurück"</b>,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelNext: <b>"Weiter"</b>,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelGoTo: <b>"Gehe zu"</b>,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelOverview: <b>"Übersicht"</b>,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelPresentationMode: <b>"Präsentationsmodus"</b>,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode: "slideshow",<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;});<br />
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;player.start();<br />
+                    });<br />
+                </tt>
+            </article>
+        </section>
+
         <section data-background-image="https://unsplash.it/1024/768?image=1068">
             <h1>The End</h1>
             <article>
@@ -178,7 +212,5 @@
                 </p>
             </article>
         </section>
-
-
     </body>
 </html>

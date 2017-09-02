@@ -1,6 +1,9 @@
 lecture-slides.js Presentation Template
 =======================================
 
+Getting Started
+---------------
+
 This is the recommended project structure for a `lecture-slides.js` presentation.
 Simply download this repository and start hacking it. It couldn't be easier. :-)
 
@@ -22,6 +25,9 @@ While you're writing you can use the built-in web server to run your slides:
 
 This will run a web server, listening on http://localhost:8080
 
+Uploading to a Web Server
+-------------------------
+
 Once you are done, build a static version and upload it to any web server:
 
     $ npm run build
@@ -36,6 +42,12 @@ to this:
     "public_url": "/slides/",
 
 That's all. Now run the development server and have a look at the example slides.
+
+Translations
+------------
+
+This example is in English. If you want to translate the User Interface, simply
+edit the `index.js`. If is only a few strings.
 
 Copyright
 ---------

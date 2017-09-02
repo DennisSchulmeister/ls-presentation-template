@@ -5,7 +5,6 @@
  */
 "use strict";
 
-//import "bootstrap/dist/css/bootstrap.min.css";
 import SlideshowPlayer from "lecture-slides.js";
 
 window.addEventListener("load", () => {
