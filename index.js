@@ -12,7 +12,10 @@ window.addEventListener("load", () => {
         // labelPrev: "Previous",
         // labelNext: "Next",
         // labelGoTo: "Go To",
+        // labelViewMenu: "View",
         // labelOverview: "Overview",
+        // labelSlideView: "Slides",
+        // labelPrintView: "Print",
         // labelPresentationMode: "Presentation Mode",
         mode: "slideshow",
     });
