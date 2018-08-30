@@ -251,28 +251,6 @@
                     a webserver and call it a day. It really doesn't have to be
                     a special server. Even the most simple one will do.
                 </p>
-
-                <hr />
-
-                <p>
-                    <b>Note:</b> In case your slides don't seem to work after
-                    you put them on a server, you most likeley have put them into
-                    a sub-directory. This is, your URL is not
-                    <a href="http://www.example.com/">http://www.example.com/</a>
-                    but maybe <a href="http://www.example.com/slides/">http://www.example.com/slides/</a>.
-                    In that case edit the file <tt>package.json</tt> and search
-                    for the following line:
-                </p>
-                <p>
-                    <tt>"public_url": "",</tt>
-                </p>
-                <p>
-                    Change it to the following, rebuild the slides and upload
-                    them again. Now everything should be fine:
-                </p>
-                <p>
-                    <tt>"public_url": "/slides/",</tt>
-                </p>
             </aside>
         </section>
 
