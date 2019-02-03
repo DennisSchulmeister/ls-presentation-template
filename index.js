@@ -14,10 +14,15 @@ window.addEventListener("load", () => {
         // labelGoTo: "Go To",
         // labelViewMenu: "View",
         // labelOverview: "Overview",
-        // labelSlideView: "Slides",
+        // labelSlidesAndText: "Slides and Text",
+        // labelSlidesOnly: "Slides Only",
+        // labelTextOnly: "Text Only",
         // labelPrintView: "Print",
-        // labelPresentationMode: "Presentation Mode",
-        mode: "slideshow",
+        // labelFadeToWhite: "Fade to White",
+        // labelFadeToBlack: "Fade to Black",
+        // labelFadeBack: "Click to go back to the slides",
+        // mode: "overview",
+        // linkMode: "slideshow",
     });
 
     player.start();
