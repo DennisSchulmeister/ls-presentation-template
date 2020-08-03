@@ -7,6 +7,11 @@
 
 import SlideshowPlayer from "lecture-slides.js";
 
+import LsPluginHighlightJs from "ls-plugin-highlight.js";
+import "highlight.js/styles/atom-one-light.css";
+
+import LsPluginExtraTags from "ls-plugin-extra-tags";
+
 window.addEventListener("load", () => {
     let player = new SlideshowPlayer({
         // labelPrev: "Previous",
@@ -23,6 +28,14 @@ window.addEventListener("load", () => {
         // labelFadeBack: "Click to go back to the slides",
         // mode: "overview",
         // linkMode: "slideshow",
+        plugins: {
+            ExtraTags: new LsPluginExtraTags({
+                //labelCarouselNext: "Next Step",
+                //labelCarouselPrev: "Previus Step",
+                //labelCarouselReset: "Restart",
+            }),
+            HighlightJs: new LsPluginHighlightJs(),
+        }
     });
 
     player.start();

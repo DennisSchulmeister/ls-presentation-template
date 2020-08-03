@@ -33,101 +33,106 @@
                     use the keyboard or touch gestures.
                 </p>
 
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md card m-1">
+                <lsx-grid-fluid>
+                    <lsx-row>
+                        <lsx-col size="md" class="card m-1">
                             <!-- Keyboard Shortcuts -->
                             <div class="card-body">
                                 <h4 class="card-title">Keyboard Shortcuts</h4>
                                 <table>
                                     <tr>
                                         <td><kbd>Left Arrow</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Go to previous slide</td>
                                     </tr>
                                     <tr>
                                         <td><kbd>Right Arrow</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Go to next slide</td>
                                     </tr>
                                     <tr>
                                         <td><kbd>Space</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Go to next slide</td>
                                     </tr>
                                     <tr>
                                         <td><kbd>Enter</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Go to next slide</td>
                                     </tr>
                                     <tr>
                                         <td><kbd>ESC</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Show table of contents</td>
                                     </tr>
                                     <tr>
                                         <td><kbd>1</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Show table of contents</td>
                                     </tr>
                                     <tr>
                                         <td><kbd>2</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                        <td>Show slides</td>
+                                        <td>    </td>
+                                        <td>Show slides with text</td>
                                     </tr>
                                     <tr>
                                         <td><kbd>3</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
+                                        <td>Show slides only</td>
+                                    </tr>
+                                    <tr>
+                                        <td><kbd>4</kbd></td>
+                                        <td>    </td>
+                                        <td>Show text only</td>
+                                    </tr>
+                                    <tr>
+                                        <td><kbd>5</kbd></td>
+                                        <td>    </td>
                                         <td>Show print view</td>
                                     </tr>
                                     <tr>
-                                        <td><kbd>P</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                        <td>Toggle presentation mode</td>
-                                    </tr>
-                                    <tr>
                                         <td><kbd>B</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Fade out to black</td>
                                     </tr>
                                     <tr>
                                         <td><kbd>W</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Fade out to white</td>
                                     </tr>
                                 </table>
                             </div>
-                        </div>
-                        <div class="col-md card m-1">
+                        </lsx-col>
+                        <lsx-col size="md" class="card m-1">
                             <!-- Touch Gestures -->
                             <div class="card-body">
                                 <h4 class="card-title">Touch Gestures</h4>
                                 <table>
                                     <tr>
                                         <td><kbd>Swipe Left</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Go to next slide</td>
                                     </tr>
                                     <tr>
                                         <td><kbd>Swipe Right</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Go to previous slide</td>
                                     </tr>
                                     <tr>
                                         <td><kbd>Double Tap</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Toggle presentation mode</td>
                                     </tr>
                                     <tr>
                                         <td><kbd>Long Press</kbd></td>
-                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>    </td>
                                         <td>Toggle slide overview</td>
                                     </tr>
                                 </table>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </lsx-col>
+                    </lsx-row>
+                </lsx-grid-fluid>
             </article>
         </section>
 
@@ -220,13 +225,13 @@
                     the final result should look something like this:
                 </p>
                 <p>
-                    <tt>
-                        &lt;section&gt;<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Title&lt;/h1&gt; <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;article&gt;Slide content&lt;/article&gt; <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;aside&gt;Detailed explanation&lt;/aside&gt; <br />
+                    <source-code language="html">
+                        &lt;section&gt;
+                             &lt;h1&gt;Title&lt;/h1&gt;
+                             &lt;article&gt;Slide content&lt;/article&gt;
+                             &lt;aside&gt;Detailed explanation&lt;/aside&gt;
                         &lt;/section&gt;
-                    </tt>
+                    </source-code>
                 </p>
 
                 <h2>Building and running the presentation</h2>
@@ -271,23 +276,23 @@
                 <p>
                     For example in German:
                 </p>
-                <tt>
-                    import SlideshowPlayer from "lecture-slides.js";<br />
-                    <br />
-                    window.addEventListener("load", () => {<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;let player = new SlideshowPlayer({<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelPrev: <b>"Zurück"</b>,<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelNext: <b>"Weiter"</b>,<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelGoTo: <b>"Gehe zu"</b>,<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelOverview: <b>"Übersicht"</b>,<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelPresentationMode: <b>"Präsentationsmodus"</b>,<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labelSlide: <b>"Folie"</b>,<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mode: "slideshow",<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;});<br />
-                        <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;player.start();<br />
-                    });<br />
-                </tt>
+                <source-code language="javascript">
+                    import SlideshowPlayer from "lecture-slides.js";
+
+                    window.addEventListener("load", () => {
+                            let player = new SlideshowPlayer({
+                                    labelPrev: <b>"Zurück"</b>,
+                                    labelNext: <b>"Weiter"</b>,
+                                    labelGoTo: <b>"Gehe zu"</b>,
+                                    labelOverview: <b>"Übersicht"</b>,
+                                    labelPresentationMode: <b>"Präsentationsmodus"</b>,
+                                    labelSlide: <b>"Folie"</b>,
+                                    mode: "slideshow",
+                            });
+
+                            player.start();
+                    });
+                </source-code>
             </article>
         </section>
 
