@@ -1,16 +1,16 @@
 /*
  * ls-presentation-template (https://www.buzzlms.de)
- * © 2017  Dennis Schulmeister-Zimolong <dennis@pingu-mail.de>
+ * © 2017 - 2023 Dennis Schulmeister-Zimolong <dennis@pingu-mail.de>
  * License of this file: 3-clause BSD
  */
 "use strict";
 
-import SlideshowPlayer from "lecture-slides.js";
+import SlideshowPlayer from "@dschulmeis/lecture-slides.js";
 
-import LsPluginHighlightJs from "ls-plugin-highlight.js";
+import LsPluginHighlightJs from "@dschulmeis/ls-plugin-highlight.js";
 import "highlight.js/styles/atom-one-light.css";
 
-import LsPluginExtraTags from "ls-plugin-extra-tags";
+import LsPluginExtraTags from "@dschulmeis/ls-plugin-extra-tags";
 
 window.addEventListener("load", () => {
     let player = new SlideshowPlayer({
