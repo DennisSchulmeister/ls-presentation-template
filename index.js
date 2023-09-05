@@ -31,7 +31,7 @@ window.addEventListener("load", () => {
         plugins: {
             ExtraTags: new LsPluginExtraTags({
                 //labelCarouselNext: "Next Step",
-                //labelCarouselPrev: "Previus Step",
+                //labelCarouselPrev: "Previous Step",
                 //labelCarouselReset: "Restart",
             }),
             HighlightJs: new LsPluginHighlightJs(),
