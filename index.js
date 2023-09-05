@@ -39,7 +39,17 @@ window.addEventListener("load", () => {
                 //labelCarouselPrev: "Previous Step",
                 //labelCarouselReset: "Restart",
             }),
-            HighlightJs: new LsPluginHighlightJs(),
+            HighlightJs: new LsPluginHighlightJs({
+                languages: {
+                    http: HLJS_Language_HTTP,
+                    html: HLJS_Language_XML,
+                    xml: HLJS_Language_XML,
+                    css: HLJS_Language_CSS,
+                    javascript: HLJS_Language_JS,
+                    json: HLJS_Language_JS,
+                    java: HLJS_Language_JAVA,
+                }
+            }),
         }
     });
 
