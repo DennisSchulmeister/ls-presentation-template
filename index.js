@@ -8,6 +8,11 @@
 import SlideshowPlayer from "@dschulmeis/lecture-slides.js";
 
 import LsPluginHighlightJs from "@dschulmeis/ls-plugin-highlight.js";
+import HLJS_Language_HTTP from 'highlight.js/lib/languages/http';
+import HLJS_Language_XML from 'highlight.js/lib/languages/xml';
+import HLJS_Language_CSS from 'highlight.js/lib/languages/css';
+import HLJS_Language_JS from 'highlight.js/lib/languages/javascript';
+import HLJS_Language_JAVA from 'highlight.js/lib/languages/java';
 import "highlight.js/styles/atom-one-light.css";
 
 import LsPluginExtraTags from "@dschulmeis/ls-plugin-extra-tags";
